@@ -37,4 +37,17 @@ class PrimaryActivityTest {
 
         Assert.assertEquals(expectedResult, actualResult)
     }
+
+    @Test
+    fun testListPrimary() {
+        Dispatchers.setMain(Dispatchers.Unconfined)
+
+        // expected
+        val expectedResult = "2, 3, 5"
+
+        // actual
+        val actualResult = primaryActivity.listPrimaryNumber(3)
+
+        Assert.assertEquals(expectedResult, actualResult)
+    }
 }

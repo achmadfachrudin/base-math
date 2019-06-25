@@ -56,14 +56,23 @@ class PrimaryActivity : BaseActivity(),
         // clear result
         viewModel.bTextResult.set(null)
 
-        // formula
-        val result = StringBuilder()
-        val input = viewModel.bTextA.get()!!.toInt()
+        viewModel.bTextA.get().let {
+            // set result
+            viewModel.bTextResult.set(listPrimaryNumber(it!!.toInt()))
+        }
+    }
 
+    /**
+     * Method for checking is primary number
+     * @param count Int
+     * @return Boolean
+     */
+    fun listPrimaryNumber(count: Int): String {
+        val result = StringBuilder()
         var number = 2
         var primeCount = 0
 
-        while (primeCount < input) {
+        while (primeCount < count) {
             if (isPrimaryNumber(number)) {
                 result.append("$number, ")
                 primeCount++
@@ -71,10 +80,8 @@ class PrimaryActivity : BaseActivity(),
             number++
         }
 
-        // set result
-        viewModel.bTextResult.set(result.toString().dropLast(2))
+        return result.toString().dropLast(2)
     }
-
 
     /**
      * Method for checking is primary number
