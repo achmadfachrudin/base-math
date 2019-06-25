@@ -12,6 +12,7 @@ import org.mockito.Mock
 import org.mockito.MockitoAnnotations
 
 class MainPageActivityTest {
+
     @Mock
     lateinit var viewModel: MainPageViewModel
 

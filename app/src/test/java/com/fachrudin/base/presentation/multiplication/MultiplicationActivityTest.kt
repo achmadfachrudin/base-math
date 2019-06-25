@@ -14,6 +14,7 @@ import org.mockito.MockitoAnnotations
  * Created by achmad.fachrudin on 25-Jun-19
  */
 class MultiplicationActivityTest {
+
     @Mock
     lateinit var multiplicationActivity: MultiplicationActivity
 

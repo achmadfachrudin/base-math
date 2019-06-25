@@ -14,7 +14,6 @@ import org.mockito.MockitoAnnotations
  */
 class PrimaryActivityTest {
 
-
     @Mock
     lateinit var primaryActivity: PrimaryActivity
 

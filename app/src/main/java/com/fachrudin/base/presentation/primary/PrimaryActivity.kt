@@ -63,9 +63,9 @@ class PrimaryActivity : BaseActivity(),
     }
 
     /**
-     * Method for checking is primary number
+     * Method for create primary list
      * @param count Int
-     * @return Boolean
+     * @return String
      */
     fun listPrimaryNumber(count: Int): String {
         val result = StringBuilder()
