@@ -78,10 +78,10 @@ class PrimaryActivity : BaseActivity(),
 
     /**
      * Method for checking is primary number
-     * @param number int
+     * @param number Int
      * @return Boolean
      */
-    private fun isPrimaryNumber(number: Int): Boolean {
+    fun isPrimaryNumber(number: Int): Boolean {
         var result = true
 
         for (i in 2 until number) {

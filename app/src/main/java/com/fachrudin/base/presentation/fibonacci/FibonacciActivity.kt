@@ -10,7 +10,6 @@ import com.fachrudin.base.R
 import com.fachrudin.base.core.BaseActivity
 import com.fachrudin.base.core.ViewDataBindingOwner
 import com.fachrudin.base.databinding.ActivityFibonacciBinding
-import kotlin.text.StringBuilder
 
 /**
  * @author achmad.fachrudin
