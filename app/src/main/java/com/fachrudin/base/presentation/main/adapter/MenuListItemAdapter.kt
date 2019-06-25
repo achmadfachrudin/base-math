@@ -68,10 +68,18 @@ class MenuListItemAdapter : BaseRecycleViewAdapter<MenuItem>() {
         override fun onClickMenu(view: View) {
             data?.let {
                 when (it.id) {
-                    1 -> { AdditionActivity.startThisActivity(context) }
-                    2 -> { MultiplicationActivity.startThisActivity(context) }
-                    3 -> { PrimaryActivity.startThisActivity(context) }
-                    4 -> { FibonacciActivity.startThisActivity(context) }
+                    1 -> {
+                        AdditionActivity.startThisActivity(context)
+                    }
+                    2 -> {
+                        MultiplicationActivity.startThisActivity(context)
+                    }
+                    3 -> {
+                        PrimaryActivity.startThisActivity(context)
+                    }
+                    4 -> {
+                        FibonacciActivity.startThisActivity(context)
+                    }
                 }
             }
         }

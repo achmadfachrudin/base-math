@@ -64,7 +64,7 @@ class MultiplicationActivity : BaseActivity(),
      * @param valueB Int
      * @return Int
      */
-    fun resultMultiplication(valueA:Int, valueB:Int): Int {
+    fun resultMultiplication(valueA: Int, valueB: Int): Int {
         return valueA * valueB
     }
 

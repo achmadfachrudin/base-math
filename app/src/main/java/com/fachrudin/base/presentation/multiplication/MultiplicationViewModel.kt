@@ -15,5 +15,4 @@ class MultiplicationViewModel : BaseViewModel() {
 
     var valueA = 0
     var valueB = 0
-    var valueResult = 0
 }

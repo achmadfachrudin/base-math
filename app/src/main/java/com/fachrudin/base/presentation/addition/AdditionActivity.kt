@@ -58,7 +58,7 @@ class AdditionActivity : BaseActivity(),
         viewModel.bTextResult.set(resultAddition(viewModel.valueA, viewModel.valueB).toString())
     }
 
-    fun resultAddition(valueA:Int, valueB:Int): Int {
+    fun resultAddition(valueA: Int, valueB: Int): Int {
         return valueA + valueB
     }
 
