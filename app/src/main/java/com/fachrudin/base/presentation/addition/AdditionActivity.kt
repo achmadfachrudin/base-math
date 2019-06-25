@@ -58,6 +58,12 @@ class AdditionActivity : BaseActivity(),
         viewModel.bTextResult.set(resultAddition(viewModel.valueA, viewModel.valueB).toString())
     }
 
+    /**
+     * Method for calculate addition
+     * @param valueA Int
+     * @param valueB Int
+     * @return Int
+     */
     fun resultAddition(valueA: Int, valueB: Int): Int {
         return valueA + valueB
     }
