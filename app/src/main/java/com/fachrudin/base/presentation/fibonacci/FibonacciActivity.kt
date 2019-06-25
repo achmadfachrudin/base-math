@@ -11,6 +11,7 @@ import com.fachrudin.base.core.BaseActivity
 import com.fachrudin.base.core.ViewDataBindingOwner
 import com.fachrudin.base.databinding.ActivityFibonacciBinding
 
+
 /**
  * @author achmad.fachrudin
  * @date 25-Jun-19
@@ -57,15 +58,39 @@ class FibonacciActivity : BaseActivity(),
         val input = viewModel.bTextA.get()!!.toInt()
 
         // set result
-        viewModel.bTextResult.set(getFibonacci().take(input).toList().toString())
+//        viewModel.bTextResult.set(listFibonacciWithSequence().take(input).toList().toString())
+        viewModel.bTextResult.set(listFibonacci(input))
     }
 
+    /**
+     * Method for create fibonacci list
+     * @param count Int
+     * @return String
+     */
+    fun listFibonacci(count: Int): String {
+        val result = StringBuilder()
+        var pass = 0
+        var current = 1
+        var fibonacci: Int
+
+        result.append("$pass, $current, ")
+
+        for (i in 0 until count - 2) {
+            fibonacci = current + pass
+            pass = current
+            current = fibonacci
+
+            result.append("$fibonacci, ")
+        }
+
+        return result.toString().dropLast(2)
+    }
 
     /**
      * Method for generate fibonacci list
      * @return Int
      */
-    private fun getFibonacci(): Sequence<Int> {
+    private fun listFibonacciWithSequence(): Sequence<Int> {
         return generateSequence(
             Pair(0, 1),
             { Pair(it.second, it.first + it.second) }
