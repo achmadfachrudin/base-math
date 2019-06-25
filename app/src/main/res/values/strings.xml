@@ -25,6 +25,6 @@
     <string name="multiplication_title">Multiplication</string>
     <string name="primary_title">Primary</string>
     <string name="fibonacci_title">Fibonacci</string>
-    <string name="msg_input_a">Masukan Nilai A</string>
-    <string name="msg_input_b">Masukan Nilai B</string>
+    <string name="msg_input_a">Enter Value A</string>
+    <string name="msg_input_b">Enter Value B</string>
 </resources>
