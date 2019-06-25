@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Base</string>
+    <string name="app_msg_close">Press Back button again to exit</string>
+    <string name="app_msg_test">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="app_number_pattern">0123456789</string>
+
+    <!--Loading-->
+    <string name="button_retry">Try Again</string>
+    <string name="text_loading">Load data</string>
+
+    <!--Error-->
+    <string name="error_title">Oops, Something went wrong</string>
+    <string name="error_msg">Check your connection and try again</string>
+
+    <!--Empty-->
+    <string name="empty_title">Oops, No News yet</string>
+    <string name="empty_msg">Try again later</string>
+
+    <!--Button-->
+    <string name="button_calculate">Calculate</string>
+
+    <!--Text-->
+    <string name="main_title">Base App</string>
+    <string name="addition_title">Addition</string>
+    <string name="multiplication_title">Multiplication</string>
+    <string name="primary_title">Primary</string>
+    <string name="fibonacci_title">Fibonacci</string>
+    <string name="msg_input_a">Masukan Nilai A</string>
+    <string name="msg_input_b">Masukan Nilai B</string>
+</resources>
