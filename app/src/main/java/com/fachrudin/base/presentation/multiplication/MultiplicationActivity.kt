@@ -58,7 +58,13 @@ class MultiplicationActivity : BaseActivity(),
         viewModel.bTextResult.set(resultMultiplication(viewModel.valueA, viewModel.valueB).toString())
     }
 
-    private fun resultMultiplication(valueA:Int, valueB:Int): Int {
+    /**
+     * Method for calculate multiplication
+     * @param valueA Int
+     * @param valueB Int
+     * @return Int
+     */
+    fun resultMultiplication(valueA:Int, valueB:Int): Int {
         return valueA * valueB
     }
 
