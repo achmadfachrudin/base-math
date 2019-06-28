@@ -13,7 +13,7 @@
     <string name="error_msg">Check your connection and try again</string>
 
     <!--Empty-->
-    <string name="empty_title">Oops, No News yet</string>
+    <string name="empty_title">Oops, No Menu yet</string>
     <string name="empty_msg">Try again later</string>
 
     <!--Button-->

@@ -58,7 +58,7 @@ class MainPageActivity : BaseActivity(),
         initUI()
 
         viewModel.getMenuFromApi()
-        observeNews()
+        observeMenu()
         observeNetworkState()
     }
 
@@ -107,7 +107,7 @@ class MainPageActivity : BaseActivity(),
         }
     }
 
-    private fun observeNews() {
+    private fun observeMenu() {
         observeData(viewModel.menu) { result ->
             result?.menu?.let {
                 listAdapter.setData(it)
